@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+
+body {
+    width: 100% ;
+    height: 100vh ; 
+    background-image: linear-gradient(to bottom, #508eed, #31a9f7, #39c2fa, #60d8f8, #8decf7);
+    padding: 0 100px ;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center ;
+    position: relative;
+    
+}
+
+
+body p {
+    padding-top: 10%;
+    color: #fff;
+    font-size: 65px;
+    justify-content: center ;
+    letter-spacing: 1px;
+    font-weight: 200;
+
+}
+
+form{
+    padding-top: 15%;
+    justify-content: center ;
+    align-content: center;
+    position: absolute;
+    color: black ;
+}
+
+form .toDO_Input , .toDo_BTN{
+    padding: 10px;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #090058;
+    border-radius: 5px;
+    border-color: aliceblue;
+    border: none;
+
+   
+
+}
+
+
+.toDo_BTN{
+    
+    color: #453c94;
+    transition: all 0.3s ease-in;
+    }
+
+
+    
+.toDo_BTN:hover{
+    color: aliceblue;
+    background-color: #090058;
+    
+    }
+
+
+    .toDo_Container{
+        margin-top: 330px;
+        position: absolute ;
+        display: flex;
+        flex-direction: column;
+        
+        width: 660px ;
+        justify-content: space-between;
+        padding: 5px 0px
+        
+
+    }
+
+
+    .MyToDo_list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+
+
+    .MyToDo_list li{
+
+        border-bottom-width: 0.0001rem;
+        border-bottom-color: rgba(255, 255, 255, 0.315);
+        border-bottom-style: solid;       
+        color: rgba(0, 0, 0, 0.76);
+        margin-top: 10px;
+        font-size: 19px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 1px;
+
+    }
+
+    .btn_div{
+
+        padding-bottom: 5px;
+        
+    }
+
+    .Done_btn{
+        color: #fff;
+        padding: 5px;
+        font-size: 18px;
+        margin-right: 4px;
+        background-color: rgba(114, 233, 114, 0.74);
+        
+
+    }
+
+
+    .Trash_btn{
+        color: #fff;
+        padding: 5px;
+        font-size: 18px;
+        background-color: rgba(216, 68, 24, 0.74);
+
+    }
+
+    .Done_btn ,  .Trash_btn{
+        padding: 8px;
+        transition: all 0.2s ease-in ;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .Done_btn:hover ,  .Trash_btn:hover{
+        border: none;
+        color: #fff;
+        background-color: #090058;
+    }
+
+
+    .fa-check , .fa-trash {
+        /* this means we cant click to it know ,we click any where in the button it will act the same */
+
+        pointer-events: none;
+    }
+
+
+    .Done_item{
+        
+        color: rgba(0, 0, 0, 0.507);
+        text-decoration: line-through;
+        transition: all 0.3s ease-in;
+        opacity: 0.5;
+        
+    }
+
+    #Done_item:hover{
+        opacity: 0.5;
+    }
+
+   
+
+    #clicked{
+
+        background-color:rgba(8, 126, 8, 0.747);
+    }
+
+    .fall{
+       
+        transform: translateX(18rem) rotateZ(10deg) ;
+        opacity: 0.8;
+        transition: all 0.2s ease;
+    }
+
+
+
+    .Drop_div{
+        position: absolute;
+        top: 231px;
+        right: 315px;
+        
+    }
+
+
+    #dropMenu {
+font-family: cairo;
+  background-color: #0562afd0;
+  color: white;
+  padding: 3px;
+  padding-left: 9px;
+  width: 150px;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+    }
+    
+
+  .Drop_div select option {
+    padding: 30px;
+  }
+
+
+
+
+  .Hide_UnCompleted{
+      
+  }
+  

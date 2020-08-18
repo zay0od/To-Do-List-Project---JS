@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zayed To do list</title>
+    <link rel="stylesheet" href="./style.css">
+
+        <!-- this allow us to use built in icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+</head>
+<body>
+    <header>
+    <p>Zayed's To do list</p>
+    </header>
+
+    <form required>
+        <input  required type="text" class="toDO_Input" size="70px" name="User_Input" maxlength="500" placeholder='Enter a new Task' required >  
+        
+       
+        <button class="toDo_BTN" type="submit">  <i class="fas fa-plus">  </i> </button>
+
+
+
+        
+    
+
+    </form>
+
+
+    <div class="Drop_div"> 
+        <select id="dropMenu" name="todos">
+
+            <option value="all">All</option>
+            <option value="Completed">Complemted</option>
+            <option value="Uncompleted">Uncompleted</option>
+        </select>
+    </div>
+
+
+
+
+
+    
+    <div class="toDo_Container">
+            <ul class="MyToDo_list">
+                <!--Here we will add all taks-->
+            </ul>
+    </div>
+
+<script src="./app.js"></script>
+</body>
+</html>
